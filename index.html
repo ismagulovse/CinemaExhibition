@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Кино — Цифровая Экспозиция</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo">Галерея Кино</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#exhibits">Экспонаты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">☽</button>
+
+    <section class="hero">
+        <div class="film-strip"></div>
+        <div class="hero-content">
+            <h1>Эпоха Золотого Экрана</h1>
+            <p class="hero-subtitle">Цифровая Экспозиция</p>
+            <p class="hero-description">
+                Погрузитесь в атмосферу классического кинематографа. Откройте для себя редкие экспонаты, которые хранят историю великих фильмов и их создателей.
+            </p>
+            <a href="#exhibits" class="cta-button">Начать Просмотр</a>
+        </div>
+    </section>
+
+    <section id="exhibits" class="exhibition">
+        <h2 class="section-title">Коллекция Экспонатов</h2>
+        <p class="section-subtitle">Нажмите на карточку, чтобы узнать больше</p>
+        
+        <div class="exhibits-grid">
+            <div class="exhibit-card" data-exhibit="1">
+                <img src="img/1.jpg" alt="Винтажная кинокамера" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Кинопроектор Christie P35GPS</h3>
+                    <p class="exhibit-year">1930-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="2">
+                <img src="img/2.jpg" alt="Киноплёнка" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Плоттеры для кинопроектора Christie P35GPS</h3>
+                    <p class="exhibit-year">1950-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="3">
+                <img src="img/3.jpg" alt="Кинопроектор" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Кинопроектор Украина -5 (16УК – 5)</h3>
+                    <p class="exhibit-year">1960-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="4">
+                <img src="img/4.jpg" alt="Киноафиша" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Кинопроектор КН-20А </h3>
+                    <p class="exhibit-year">1940-1970-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="5">
+                <img src="img/5.jpg" alt="Кинокресла" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Кинопроектор КН-22</h3>
+                    <p class="exhibit-year">1950-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="6">
+                <img src="img/6.jpg" alt="Монтажный стол" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Магнитофон-приставка «Эльфа 201-3 Стерео»</h3>
+                    <p class="exhibit-year">1970-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="7">
+                <img src="img/7.jpg" alt="Кинохлопушка" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Устройство автоматизации кинопоказа АКП-6</h3>
+                    <p class="exhibit-year">1960-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="8">
+                <img src="img/8.jpg" alt="Кинотеатр" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Монтажный стол РСФ-8</h3>
+                    <p class="exhibit-year">1940-1980-е годы</p>
+                </div>
+            </div>
+
+            <div class="exhibit-card" data-exhibit="9">
+                <img src="img/9.jfif" alt="Микрофон" class="exhibit-image">
+                <div class="exhibit-info">
+                    <h3 class="exhibit-title">Склеечный пресс 35Л2</h3>
+                    <p class="exhibit-year">1950-е годы</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detailed-exhibits">
+            <div class="exhibit-detail" id="detail-1">
+                <img src="img/1.jpg" alt="Винтажная кинокамера" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Кинокамера Bell & Howell</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Легендарная 35-мм кинокамера Bell & Howell модели 2709, выпущенная в 1930-х годах, представляет собой настоящий шедевр инженерной мысли той эпохи. Эта камера использовалась для съёмок множества классических фильмов Голливуда.</p>
+                        <p>Камера отличается исключительной надёжностью и точностью механизмов. Её уникальная система прерывистого движения плёнки обеспечивала идеальную стабильность кадра, что было критически важно для качества изображения в эпоху немого и раннего звукового кино.</p>
+                        <p>Этот экземпляр находится в отличном состоянии и является частью личной коллекции известного кинематографиста. Камера всё ещё функциональна и может использоваться для съёмок на плёнку.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(1)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-2">
+                <img src="img/2.jpg" alt="Киноплёнка" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Оригинальная 35мм плёнка</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Подлинная 35-миллиметровая киноплёнка из архива киностудии «Мосфильм», датируемая 1950-ми годами. На этой плёнке запечатлены фрагменты культовых советских фильмов того времени.</p>
+                        <p>35мм плёнка была золотым стандартом кинопроизводства на протяжении большей части XX века. Её формат обеспечивал оптимальный баланс между качеством изображения, портативностью и стоимостью производства.</p>
+                        <p>Представленный образец демонстрирует характерную перфорацию, которая использовалась для точного продвижения плёнки через проектор. Несмотря на возраст, плёнка сохранила свою структурную целостность благодаря правильным условиям хранения.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(2)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-3">
+                <img src="img/3.jpg" alt="Кинопроектор" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Проектор Kinoton</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Профессиональный кинопроектор Kinoton немецкого производства 1960-х годов. Этот проектор устанавливался в крупнейших кинотеатрах Европы и обеспечивал высочайшее качество демонстрации фильмов.</p>
+                        <p>Kinoton славился своей превосходной оптикой и точностью механизмов. Проектор оснащён ксеноновой лампой высокой мощности, которая давала яркое и ровное освещение экрана даже в больших залах.</p>
+                        <p>Особенностью этой модели является автоматическая система смены катушек, позволявшая демонстрировать полнометражные фильмы без прерывания показа. Эта технология была революционной для своего времени.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(3)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-4">
+                <img src="img/4.jpg" alt="Киноафиша" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Раритетные киноафиши</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Коллекция оригинальных киноафиш 1940-1970-х годов, представляющая уникальные образцы графического дизайна и полиграфического искусства. Каждая афиша — это не просто рекламный материал, а произведение искусства.</p>
+                        <p>В эпоху до цифровых технологий киноафиши создавались вручную талантливыми художниками. Они использовали смелые цветовые решения, выразительную типографику и драматические композиции, чтобы передать атмосферу фильма.</p>
+                        <p>Представленные афиши напечатаны методом литографии на плотной бумаге. Многие из них сохранили насыщенность красок благодаря специальным техникам печати того времени. Эти артефакты представляют огромную историческую и художественную ценность.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(4)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-5">
+                <img src="img/5.jpg" alt="Кинокресла" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Театральные кресла</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Оригинальные театральные кресла из легендарного московского кинотеатра «Художественный», установленные в зале в 1950-х годах. Эти кресла помнят премьеры величайших советских фильмов.</p>
+                        <p>Кресла изготовлены из массива дуба с обивкой из бархата насыщенного бордового цвета. Их эргономичная форма была тщательно продумана для обеспечения максимального комфорта зрителей во время длительных киносеансов.</p>
+                        <p>Каждое кресло оснащено откидным сиденьем с пружинным механизмом, который до сих пор работает безупречно. Подлокотники украшены латунными накладками с характерным для той эпохи орнаментом. Это настоящий символ золотого века советского кинопроката.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(5)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-6">
+                <img src="img/6.jpg" alt="Монтажный стол" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Монтажный стол Steenbeck</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Профессиональный монтажный стол Steenbeck — легендарное оборудование, на котором создавались шедевры мирового кинематографа. Эта модель 1970-х годов использовалась на крупнейших киностудиях для монтажа художественных фильмов.</p>
+                        <p>Steenbeck произвёл революцию в киномонтаже, позволяя редакторам работать с изображением и звуком одновременно. Стол оснащён несколькими экранами для просмотра материала, точными механизмами подачи плёнки и возможностью покадрового анализа.</p>
+                        <p>На этом конкретном столе монтировались фильмы выдающихся режиссёров. Он представляет собой свидетельство той эпохи, когда монтаж был настоящим ремеслом, требующим не только творческого видения, но и технического мастерства. До появления цифровых технологий такие столы были незаменимым инструментом в создании кино.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(6)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-7">
+                <img src="img/7.jpg" alt="Кинохлопушка" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Режиссёрская хлопушка</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Классическая режиссёрская хлопушка (клаппер) 1960-х годов — незаменимый инструмент на съёмочной площадке. Этот простой, но гениальный по своей функциональности предмет использовался для синхронизации изображения и звука.</p>
+                        <p>Хлопушка содержит важную информацию о каждом дубле: название фильма, номер сцены, дубля, имя режиссёра и оператора. При захлопывании створок создаётся характерный звук и визуальный момент, который позволяет точно совместить аудио- и видеодорожки при монтаже.</p>
+                        <p>Эта конкретная хлопушка использовалась на съёмках известных советских фильмов. На её деревянной поверхности сохранились следы мела и карандаша, которыми записывались данные о сотнях дублей. Каждая царапина и потёртость хранит память о напряжённых съёмочных днях.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(7)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-8">
+                <img src="img/8.jpg" alt="Кинотеатр" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Архивные фотографии залов</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Уникальная коллекция архивных фотографий легендарных кинотеатров СССР и России, запечатлевших атмосферу киносеансов с 1940-х по 1980-е годы. Эти снимки демонстрируют эволюцию архитектуры и дизайна кинозалов.</p>
+                        <p>На фотографиях можно увидеть роскошные интерьеры кинотеатров сталинской эпохи с хрустальными люстрами и мраморными колоннами, функциональные модернистские залы 1960-х и футуристические кинотеатры 1970-х годов с их характерным космическим дизайном.</p>
+                        <p>Коллекция включает редкие кадры открытия первых широкоформатных кинотеатров, показы культовых фильмов и портреты зрителей тех лет. Эти фотографии — бесценное свидетельство того, как поход в кино был важным культурным событием и социальным ритуалом для миллионов людей.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(8)">Закрыть</button>
+                </div>
+            </div>
+
+            <div class="exhibit-detail" id="detail-9">
+                <img src="img/9.jfif" alt="Микрофон" class="exhibit-detail-image">
+                <div class="exhibit-detail-content">
+                    <h3 class="exhibit-detail-title">Студийный микрофон RCA</h3>
+                    <div class="exhibit-detail-description">
+                        <p>Легендарный ленточный микрофон RCA 44-BX 1950-х годов — икона звукозаписи золотой эры Голливуда. Этот микрофон использовался для записи диалогов в классических фильмах и считается одним из лучших студийных микрофонов всех времён.</p>
+                        <p>Ленточная технология RCA обеспечивала тёплое, естественное звучание голоса, которое невозможно было достичь с помощью других типов микрофонов того времени. Характерный хромированный корпус в форме восьмёрки стал символом профессиональной звукозаписи.</p>
+                        <p>Этот микрофон записывал голоса величайших актёров кино. Несмотря на почтенный возраст, он всё ещё находится в рабочем состоянии и демонстрирует выдающееся качество звука. Многие современные звукорежиссёры до сих пор предпочитают винтажные RCA для записи вокала благодаря их уникальному звуковому характеру.</p>
+                    </div>
+                    <button class="close-detail" onclick="closeDetail(9)">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">О Выставке</h2>
+            <p>В РАЗРАБОТКЕ</p>
+            <p>Можно разместить ваши материалы.</p>
+            <!-- <p class="about-text">
+                «Галерея Кино» — это цифровая экспозиция, посвящённая истории кинематографа и сохранению культурного наследия эпохи классического кино. Наша коллекция включает редкие экспонаты, каждый из которых рассказывает уникальную историю о развитии киноискусства.
+            </p>
+            <p class="about-text">
+                Мы стремимся сделать историю кино доступной для всех, сочетая традиционный музейный подход с современными цифровыми технологиями. Каждый экспонат тщательно отобран и задокументирован нашими экспертами-киноведами.
+            </p>
+            <p class="about-text">
+                Посетите нашу выставку, чтобы прикоснуться к магии золотой эры кинематографа и узнать, как создавались фильмы, которые навсегда изменили историю мирового искусства.
+            </p> -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <div class="contact-item">
+                    <strong>Адрес:</strong><br>
+                    г. Сургут, ул. Набережный просп., д.7
+                </div>
+                <div class="contact-item">
+                    <strong>Телефон:</strong><br>
+                    +7 (3462) 45-84-58
+                </div>
+                <div class="contact-item">
+                    <strong>Web-страница</strong><br>
+                    https://kinougra.ru/
+                </div>
+                 <div class="contact-item">
+                    <strong>Email</strong><br>
+                    mail@kinocentr86.ru
+                </div>
+                <div class="contact-item">
+                    <strong>Режим работы:</strong><br>
+                    Ср-Вс: 11:00–19:00
+                </div>
+            </div>
+
+            <div class="feedback-form">
+                <h3>Оставить отзыв</h3>
+                <p>В РАЗРАБОТКЕ</p>
+                <!-- <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Email или телефон</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваш отзыв</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form> -->
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2026 Галерея Кино. Все права защищены. Цифровая экспозиция истории кинематографа.
+        </div>
+    </footer>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
