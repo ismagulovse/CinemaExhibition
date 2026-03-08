@@ -127,3 +127,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// === ЛОГИКА ДЛЯ QR-КОДОВ ===
+// Проверяем URL при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    openExhibitFromHash();
+});
+
+// Проверяем URL, если пользователь перемещается по истории браузера
+window.addEventListener('hashchange', () => {
+    openExhibitFromHash();
+});
+
+function openExhibitFromHash() {
+    const hash = window.location.hash; // Получаем часть ссылки (например, #exhibit-3)
+    
+    if (hash && hash.startsWith('#exhibit-')) {
+        // Достаем только цифру (ID)
+        const exhibitId = hash.replace('#exhibit-', '');
+        const detailElement = document.getElementById(`detail-${exhibitId}`);
+        
+        if (detailElement) {
+            // Закрываем все остальные открытые карточки
+            document.querySelectorAll('.exhibit-detail').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Открываем нужную
+            detailElement.classList.add('active');
+            
+            // Плавно скроллим к ней (с задержкой, чтобы DOM успел обновиться)
+            setTimeout(() => {
+                const yOffset = -120; // Отступ сверху для шапки
+                const y = detailElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }, 300);
+        }
+    }
+}
