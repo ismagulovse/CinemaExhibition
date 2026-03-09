@@ -95,24 +95,6 @@ function closeDetail(id) {
     }
 }
 
-// Form submission
-const feedbackForm = document.getElementById('feedbackForm');
-feedbackForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(feedbackForm);
-    const name = formData.get('name');
-    const contact = formData.get('contact');
-    const message = formData.get('message');
-    
-    // Here you would normally send the data to a server
-    // For demo purposes, we'll just show an alert
-    alert(`Спасибо за ваш отзыв, ${name}! Мы свяжемся с вами в ближайшее время.`);
-    
-    // Reset form
-    feedbackForm.reset();
-});
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
